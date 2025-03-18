@@ -43,23 +43,23 @@
             z-index: 1000;
         }
 
-        .popup_title img {
+/*         .popup_title img {
             width: 100%;
             /* Ensure image fills the container width */
-            height: auto;
+            /*height: auto;
             /* Maintain aspect ratio */
-            display: block;
+            /*display: block;
             /* Prevents extra space below image */
         }
-
-        .popup_title .close {
+ */
+/*         .popup_title .close {
             position: absolute;
             top: 5px;
             right: 10px;
             font-size: 20px;
             cursor: pointer;
         }
-    
+     */
         .mapboxgl-ctrl-scale {
             font-size: 15px; 
             padding: 8px; 
@@ -219,10 +219,10 @@
     <button id="survey-button" onclick="window.open('http://127.0.0.1:5000', '_blank')">Community Harvest Form</button>
     <div id="map"></div>
 
-    <div id="popup_title" class="popup_title">
+<!--     <div id="popup_title" class="popup_title">
         <span class="close" onclick="togglePopup()">&times;</span>
         <img id="popup_titleImg" src="popup-oct21.png" alt="Popup Image"> 
-    </div>
+    </div> -->
 
     <div id="map-overlay" class="map-overlay"></div>
   
@@ -233,15 +233,15 @@
 
     <script>
 
-        // Function to toggle the visibility of the popup (intro slide)
-        function togglePopup() {
-            var popup_title = document.getElementById('popup_title');
-            if (popup_title.style.display === 'none' || popup_title.style.display === '') {
-                popup_title.style.display = 'block';
-            } else {
-                popup_title.style.display = 'none';
-            }
-        }
+        // // Function to toggle the visibility of the popup (intro slide)
+        // function togglePopup() {
+        //     var popup_title = document.getElementById('popup_title');
+        //     if (popup_title.style.display === 'none' || popup_title.style.display === '') {
+        //         popup_title.style.display = 'block';
+        //     } else {
+        //         popup_title.style.display = 'none';
+        //     }
+        // }
 
 ////// map ////////////////////////////////////////////////////
        	mapboxgl.accessToken = 'pk.eyJ1IjoibGl6bWNjbGVhcnkiLCJhIjoiY203dXJvbG8zMDQxcTJqb2RobWJrb29rZiJ9.EXEp4Zxzb90S3p3977Pnfw';
